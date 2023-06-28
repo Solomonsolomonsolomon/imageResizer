@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="background"></div>
+    <h1>image Resizer</h1>
+    <form>
+      <p>drag and drop or select file</p>
+      <p id="msg"></p>
+      <input type="file" name="file" id="file" />
+      <label for="format" id="dimensionz">
+        <p>enter dimensions you want to convert to</p>
+        <label for="">
+          <p>640 x 480</p>
+          <input
+            type="radio"
+            name="dimension"
+            id="radio"
+            required
+            class="radio"
+            value="640,480"
+          />
+        </label>
+        <label for="">
+          <p>720 x 640</p>
+          <input
+            type="radio"
+            name="dimension"
+            id=""
+            class="radio"
+            value="720,640"
+          />
+        </label>
+        <label for="">
+          <p>1080 x 720</p>
+          <input
+            type="radio"
+            name="dimension"
+            id=""
+            class="radio"
+            value="1080,720"
+          />
+        </label>
+        <label for="">
+          <p>100 x100</p>
+          <input
+            type="radio"
+            name="dimension"
+            id=""
+            class="radio"
+            value="100,100"
+          />
+        </label>
+      </label>
+
+      <button type="submit">CONVERT</button>
+    </form>
+    <div id="downloadwindow"></div>
+    <button onclick="customDimensions()" id="custom">
+      enter custom dimensions
+    </button>
+
+    <div id="customWindow"></div>
+    <div id="foot">
+      <footer>
+        <p>Made by Solomon.</p>
+        <p>copyright &copy; 2023</p>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

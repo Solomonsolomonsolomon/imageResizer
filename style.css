@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Rajdhani, Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  display: grid;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+  font-weight: 900;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+}
+form input[type="file"] {
+  padding: 20%;
+  border: 1px solid;
+}
+form label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+form label label {
+  border: 1px solid;
+  padding: 1%;
+}
+form button {
+  padding: 20px;
+}
+a {
+  text-align: center;
+}
+footer {
+  margin-top: 3%;
+  text-align: center;
+}
+#custom{
+    margin-top: 10px;
+background-color: rgb(82, 82, 212);
+padding: 2%;
+width: fit-content;
+color: white;
+}
+#customForm{
+    padding: 10px;
+        margin-top: 10px;
+
+width: fit-content;
+color: white;
+position: relative;
+
+}
+#customForm button{
+    margin-top: 5px;
+    background-color: green;
+    color: white;
+}
+#customForm input{
+   
+    width: 100%;
+    padding: 2px;
+    margin-top: 2px;
+}
+#customForm #close{
+    background-color: red;
+    padding: 0;
+    margin:0;
+    padding: 2%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
